@@ -81,7 +81,7 @@ http://www.tooplate.com/view/2110-character
           tm-block-left-2
         " data-desktop-seq-no="2" data-mobile-seq-no="3">
       <header>
-        <h2 class="tm-text-uppercase" id="global-warming"> <a target="_blank"
+        <h2 class="tm-text-uppercase" id="trollo"> <a target="_blank"
             href="https://trollo-manage-team-with-trolls.herokuapp.com/#/">Trollo</a></h2>
       </header>
       <p>
@@ -128,14 +128,14 @@ http://www.tooplate.com/view/2110-character
       <a target="_blank" href="https://github.com/em0227/Around-the-Block"><img src="img/splash-atb.gif" alt="Image"
           class="tm-img-left second-image" /></a>
     </div>
-    <div class="tm-footer" id="tmFooter" data-desktop-seq-no="6" data-mobile-seq-no="9">
+    <div class="tm-footer" id="tmFooter" data-desktop-seq-no="6" data-mobile-seq-no="11">
 
       <div>
         <p>
           The Site used CSS template Design by
           <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a>
         </p>
-        <p class="tm-mb-small">Copyright &copy; 2021 Emily Wu</p>
+        <p class="tm-mb-small">Copyright &copy; 2024 Emily Wu</p>
 
       </div>
     </div>
@@ -166,9 +166,6 @@ http://www.tooplate.com/view/2110-character
         <p>
           Checkout with me on how global warming will affect food supply for us in the next 60 years.
         </p>
-
-
-        <!-- -->
       </div>
     </div>
 
@@ -177,8 +174,50 @@ http://www.tooplate.com/view/2110-character
           src="img/global-warming-for-profolio.gif" alt="Image" class="third-image" /></a>
     </div>
 
-    <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="10">
-      <div class="tm-form-container tm-block-pad tm-pb-0">
+    <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="9">
+      <div class="
+                  tm-block-right-inner
+                  tm-bg-primary-light
+                  tm-text-white
+                  tm-block
+                  tm-block-wider
+                  tm-block-pad
+                ">
+        <header>
+          <h2 class="tm-text-uppercase" id="global-warming">
+            <a target="_blank" href="https://em0227.github.io/Global-Warming-on-Food/">3 Years at Aspen Capital</a>
+          </h2>
+        </header>
+        <p>
+          I was a fullstack software engineer at Aspen Capital, a mortgage servicing company, and I was part of the team
+          to
+          build out some greenfield projects like the Borrower Portal, and the Admin Portal.
+        </p>
+        <p>Some of the highligts of my achievements:</p>
+        <li>
+          Led a team of front-end developers in designing and implementing a greenfield project focused on automating
+          payoff quote
+          generation based on user input, resulting in <b>66% reduction in administrative workload</b>.</li>
+        <li>Integrated Azure AD SAML identity provider with AWS Cognito to achieve <b>SSO with Oauth2</b> that allows
+          internal users to log
+          in the AWS cloud-based web tool with their corporate Microsoft emails.</li>
+        <li>Designed <b>"Add a Note"</b> feature for a new loan management system, leveraging AWS Lambda, SQS, and
+          DynamoDB
+          stream to
+          synchronize notes between cloud and on-prem databases, driving a 46% surge in system utilization via improved
+          communication and record-keeping.</li>
+        <li>Developed a <b>RESTful API endpoint</b> that integrated with Plaid to retrieve banks’ data and autofill
+          institution name with
+          provided routing number on “Add a Bank” form, elevating user experience and speed to add a bank account for
+          payment.</li>
+
+
+      </div>
+
+      <div class="item" data-desktop-seq-no="10" data-mobile-seq-no="10">
+        <img src="img/AspenWork.gif" alt="Image" class="final-image" /></a>
+      </div>
+      <!-- <div class="tm-form-container tm-block-pad tm-pb-0">
         <header>
           <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
             Contact Me
@@ -201,24 +240,24 @@ http://www.tooplate.com/view/2110-character
               Send
             </button>
           </div>
-        </form>
-      </div>
+        </form> 
+      </div> -->
 
-      <div class="tm-form-section-tag">
-        <div class="
+      <!-- <div class="tm-form-section-tag">
+      <div class="
               tm-bg-secondary
               tm-text-white
               tm-block-pad
               tm-form-section-tag-inner
             ">
-          <header>
-            <h2>Looking for innovative and adventurous SWE? </h2>
-          </header>
-          <p>
-            Let's brainstorm something awesome together!
-          </p>
-        </div>
-      </div>
+        <header>
+          <h2>Looking for innovative and adventurous SWE? </h2>
+        </header>
+        <p>
+          Let's brainstorm something awesome together!
+        </p>
+      </div>-->
+    </div>
     </div>
   </main>
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -268,7 +307,9 @@ http://www.tooplate.com/view/2110-character
         block6,
         block7,
         block8,
-        block9;
+        block9,
+        block10,
+        block22;
 
       if (window.innerWidth <= 1199) {
         // Mobile layout
@@ -283,6 +324,7 @@ http://www.tooplate.com/view/2110-character
         block8 = $("div[data-mobile-seq-no='8']");
         block9 = $("div[data-mobile-seq-no='9']");
         block10 = $("div[data-mobile-seq-no='10']");
+        block11 = $("div[data-mobile-seq-no='11']");
       } else {
         // Desktop layout
         nextLayout = "desktop";
@@ -295,6 +337,7 @@ http://www.tooplate.com/view/2110-character
         block7 = $("div[data-desktop-seq-no='7']");
         block8 = $("div[data-desktop-seq-no='8']");
         block9 = $("div[data-desktop-seq-no='9']");
+        block10 = $("div[data-desktop-seq-no='10']");
       }
 
       if (nextLayout !== currentLayout) {
@@ -307,6 +350,8 @@ http://www.tooplate.com/view/2110-character
         block6.after(block7.detach());
         block7.after(block8.detach());
         block8.after(block9.detach());
+        block9.after(block10.detach());
+        block10.after(block11.detach());
         currentLayout = nextLayout;
       }
     }

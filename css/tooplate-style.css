@@ -76,7 +76,7 @@ p {
 .item {
   /* Masonry bricks or child elements */
   display: inline-block;
-  margin: 0;
+  margin: 10 0 0;
   width: 100%;
 }
 

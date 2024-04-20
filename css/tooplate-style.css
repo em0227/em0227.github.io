@@ -56,6 +56,10 @@ p {
   margin-bottom: 20px;
 }
 
+li {
+  line-height: 2;
+}
+
 .tm-container {
   max-width: 1200px;
   width: 100%;
